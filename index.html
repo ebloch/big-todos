@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Big Todos</title>
+    <link href="screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+    
+    <script type="text/javascript">
+      
+      function disableAll(){      
+        for (i=0; i < document.getElementsByTagName('INPUT').length; i++){
+          document.getElementsByTagName('INPUT')[i].readOnly=true;
+        }
+      };
+      
+    </script>
+    
+  </head>
+  <body onload="disableAll()">
+    <div id="container">
+      <form id="todos-form">
+        <ol>
+          <li><input type="text" onfocus="readOnly=false" onblur="readOnly=true" id="todo1"></li>
+          <li><input type="text" onfocus="readOnly=false" onblur="readOnly=true" id="todo2"></li>
+          <li><input type="text" onfocus="readOnly=false" onblur="readOnly=true" id="todo3"></li>
+        </ol>
+      </form>
+    </div>
+  
+    <script type="text/javascript">
+      var Todos = { 
+        init: function() {
+          todo1.value = window.localStorage.getItem('todo1');
+          todo2.value = window.localStorage.getItem('todo2');
+          todo3.value = window.localStorage.getItem('todo3');
+      
+          todo1.addEventListener("change", Todos.save, true);  
+          todo2.addEventListener("change", Todos.save, true);
+          todo3.addEventListener("change", Todos.save, true);
+        },
+        
+        save: function(event){
+          window.localStorage.setItem(event.target.id, event.target.value);
+        }
+      };
+      Todos.init(); 
+    </script>
+  </body>
+</html>
