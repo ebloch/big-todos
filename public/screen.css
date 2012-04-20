@@ -58,12 +58,15 @@ li {
 
 textarea {
   padding: 5px;
-  height: 65px;
   overflow: hidden;
   cursor: default;
   border:0px;
   width: 80%;
   vertical-align: top;
+  line-height: 65px;
+  min-height: 65px;
+  height: 65px;
+ resize: none;
 }
 
 textarea:focus {
