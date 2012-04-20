@@ -48,16 +48,24 @@ ol {
   list-style-type: decimal;
   padding-left:10px;
   list-style-position: inside;
+  vertical-align: top;
 }
 
 li {
   margin-top: 20px;
+  vertical-align: top;
 }
 
-input {
+textarea {
   padding: 5px;
   height: 65px;
-  overflow: auto;
-  border: 0px;
+  overflow: hidden;
+  cursor: default;
+  border:0px;
   width: 80%;
+  vertical-align: top;
+}
+
+textarea:focus {
+  cursor: text;
 }
