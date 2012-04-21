@@ -12,7 +12,7 @@ Big Todo's was born.
 
 ## Skillz
 
-I've been  my mark-up and JS skills. This isn't perfect but it works! 
+This project was apart of me improving my mark-up skills and leaning JavaScript. It's not perfect but it works! 
 
 ## How To
 
