@@ -6,9 +6,9 @@ MITs is a system I've been using for the past several years to get shit done.
 
 I use a traditional bloated Todo process for all the little things, but I like something clean and simple for my MITs.
 
-On Thursday April 19th I thought: "wouldn't it be nice to just see these MITs big and in the browser, easily accessible via a pinned tab in Chrome".
+One day I thought: "wouldn't it be nice to just see these MITs big and in the browser, easily accessible via a pinned tab in Chrome".
 
-So on Friday April 20th Big Todo's was born.
+So on the next day I created Big Todos.
 
 Boom.
 
