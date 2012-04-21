@@ -6,16 +6,6 @@
     <link href="public/favicon.ico" rel="icon" type="image/x-icon" >
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
     <script type='text/javascript' src='public/jquery.autogrow-textarea.js'></script>
-    <script type="text/javascript">
-      
-      function disableAll(){      
-        for (i=0; i < document.getElementsByTagName('INPUT').length; i++){
-          document.getElementsByTagName('INPUT')[i].readOnly=true;
-        }
-      };
-      
-    </script>
-    
   </head>
   <body>
     <div id="container">
@@ -25,7 +15,6 @@
         <li><textarea type="text" id="todo3"></textarea></li>
       </ol>
     </div>
-  
     <script type="text/javascript">
       var Todos = { 
         init: function() {
@@ -37,7 +26,6 @@
           todo2.addEventListener("change", Todos.save, true);
           todo3.addEventListener("change", Todos.save, true);
         },
-        
         save: function(event){
           window.localStorage.setItem(event.target.id, event.target.value);
         }
